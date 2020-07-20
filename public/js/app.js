@@ -1899,10 +1899,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BarGraph.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BarGraph.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LineGraph.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LineGraph.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1914,10 +1914,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  // props: ['legend'],
   props: ['legend', 'chartdata', 'color'],
   // data() {
   //   legend: []
@@ -1925,9 +1923,9 @@ __webpack_require__.r(__webpack_exports__);
   // },
   mounted: function mounted() {
     console.log('BarGraph component mounted.'); // var ctx = document.getElementById('myChart');
+    // var ctx = this.$el;
 
-    var ctx = this.$el;
-    var myChart = new chart_js__WEBPACK_IMPORTED_MODULE_0___default.a(ctx, {
+    var myChart = new chart_js__WEBPACK_IMPORTED_MODULE_0___default.a(this.$el, {
       type: 'line',
       // type: 'bar',
       data: {
@@ -74900,10 +74898,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BarGraph.vue?vue&type=template&id=710a08e6&":
-/*!***********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BarGraph.vue?vue&type=template&id=710a08e6& ***!
-  \***********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LineGraph.vue?vue&type=template&id=fccb9242&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LineGraph.vue?vue&type=template&id=fccb9242& ***!
+  \************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -87119,15 +87117,17 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 // var ExampleComponent = require('./components/ExampleComponent.vue').default;
+// var BarGraph = require('./components/BarGraph.vue').default;
 
-var BarGraph = __webpack_require__(/*! ./components/BarGraph.vue */ "./resources/js/components/BarGraph.vue")["default"];
+var LineGraph = __webpack_require__(/*! ./components/LineGraph.vue */ "./resources/js/components/LineGraph.vue")["default"];
 
 var app = new Vue({
   el: '#root',
   // components: { example-component }
   components: {
     // ExampleComponent,
-    BarGraph: BarGraph
+    LineGraph: LineGraph // BarGraph,
+
   }
 });
 
@@ -87178,17 +87178,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/components/BarGraph.vue":
-/*!**********************************************!*\
-  !*** ./resources/js/components/BarGraph.vue ***!
-  \**********************************************/
+/***/ "./resources/js/components/LineGraph.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/components/LineGraph.vue ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _BarGraph_vue_vue_type_template_id_710a08e6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BarGraph.vue?vue&type=template&id=710a08e6& */ "./resources/js/components/BarGraph.vue?vue&type=template&id=710a08e6&");
-/* harmony import */ var _BarGraph_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BarGraph.vue?vue&type=script&lang=js& */ "./resources/js/components/BarGraph.vue?vue&type=script&lang=js&");
+/* harmony import */ var _LineGraph_vue_vue_type_template_id_fccb9242___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LineGraph.vue?vue&type=template&id=fccb9242& */ "./resources/js/components/LineGraph.vue?vue&type=template&id=fccb9242&");
+/* harmony import */ var _LineGraph_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LineGraph.vue?vue&type=script&lang=js& */ "./resources/js/components/LineGraph.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -87198,9 +87198,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _BarGraph_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _BarGraph_vue_vue_type_template_id_710a08e6___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _BarGraph_vue_vue_type_template_id_710a08e6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _LineGraph_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LineGraph_vue_vue_type_template_id_fccb9242___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LineGraph_vue_vue_type_template_id_fccb9242___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -87210,38 +87210,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/BarGraph.vue"
+component.options.__file = "resources/js/components/LineGraph.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/BarGraph.vue?vue&type=script&lang=js&":
-/*!***********************************************************************!*\
-  !*** ./resources/js/components/BarGraph.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************/
+/***/ "./resources/js/components/LineGraph.vue?vue&type=script&lang=js&":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/LineGraph.vue?vue&type=script&lang=js& ***!
+  \************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BarGraph_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./BarGraph.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BarGraph.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BarGraph_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LineGraph_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./LineGraph.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LineGraph.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LineGraph_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/BarGraph.vue?vue&type=template&id=710a08e6&":
-/*!*****************************************************************************!*\
-  !*** ./resources/js/components/BarGraph.vue?vue&type=template&id=710a08e6& ***!
-  \*****************************************************************************/
+/***/ "./resources/js/components/LineGraph.vue?vue&type=template&id=fccb9242&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/LineGraph.vue?vue&type=template&id=fccb9242& ***!
+  \******************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BarGraph_vue_vue_type_template_id_710a08e6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./BarGraph.vue?vue&type=template&id=710a08e6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BarGraph.vue?vue&type=template&id=710a08e6&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BarGraph_vue_vue_type_template_id_710a08e6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LineGraph_vue_vue_type_template_id_fccb9242___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./LineGraph.vue?vue&type=template&id=fccb9242& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LineGraph.vue?vue&type=template&id=fccb9242&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LineGraph_vue_vue_type_template_id_fccb9242___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BarGraph_vue_vue_type_template_id_710a08e6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LineGraph_vue_vue_type_template_id_fccb9242___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -10,13 +10,13 @@
   <h1>Chart.js Practice</h1>
   <div id="root">
     {{-- <example-component></example-component> --}}
-    <bar-graph v-bind:legend="['Jan', 'Feb', 'Mar']"
+    <line-graph v-bind:legend="['Jan', 'Feb', 'Mar']"
                v-bind:chartdata="[20, 10, 30]"
                color="green"
-    ></bar-graph>
-    <bar-graph v-bind:legend="['01', '02', '03']"
+    ></line-graph>
+    {{-- <bar-graph v-bind:legend="['01', '02', '03']"
                v-bind:chartdata="[100, 50, 25]"
-    ></bar-graph>
+    ></bar-graph> --}}
 
     {{-- <bar-graph></bar-graph> --}}
   </div>

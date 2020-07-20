@@ -29,7 +29,8 @@ window.Vue = require('vue');
  */
 
 // var ExampleComponent = require('./components/ExampleComponent.vue').default;
-var BarGraph = require('./components/BarGraph.vue').default;
+// var BarGraph = require('./components/BarGraph.vue').default;
+var LineGraph = require('./components/LineGraph.vue').default;
 
 const app = new Vue({
     el: '#root',
@@ -37,6 +38,7 @@ const app = new Vue({
     // components: { example-component }
     components: {
       // ExampleComponent,
-      BarGraph,
+      LineGraph,
+      // BarGraph,
     }
 });
