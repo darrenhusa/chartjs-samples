@@ -20,8 +20,8 @@
   <h1>Chart.js Practice</h1>
   <div id="root">
     {{-- <example-component></example-component> --}}
-    <line-graph v-bind:labels="['Jan', 'Feb', 'Mar']"
-               v-bind:chartdata="[20, 10, 30]"
+    <line-graph v-bind:labels="{{ $labels }}"
+               v-bind:chartdata="{{ $chartdata }}"
                color="green"
     ></line-graph>
     {{-- <bar-graph v-bind:legend="['01', '02', '03']"
