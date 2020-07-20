@@ -1914,23 +1914,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['legend', 'chartdata', 'color'],
-  // data() {
-  //   legend: []
-  //   // chartdata: []
-  // },
+  props: ['labels', 'chartdata', 'color'],
+  data: function data() {
+    return {
+      legend: ''
+    };
+  },
   mounted: function mounted() {
-    console.log('BarGraph component mounted.'); // var ctx = document.getElementById('myChart');
+    console.log('LineGraph component mounted.'); // var ctx = document.getElementById('myChart');
     // var ctx = this.$el;
 
-    var myChart = new chart_js__WEBPACK_IMPORTED_MODULE_0___default.a(this.$el, {
+    var myChart = new chart_js__WEBPACK_IMPORTED_MODULE_0___default.a(this.$refs, {
       type: 'line',
       // type: 'bar',
       data: {
         // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        labels: this.legend,
+        labels: this.labels,
         datasets: [{
           label: '# of Votes',
           data: this.chartdata,
@@ -1962,6 +1966,8 @@ __webpack_require__.r(__webpack_exports__);
         }
       }
     });
+    this.legend = myChart.generateLegend();
+    console.log(this.legend); // console.log(myChart.generateLegend());
   }
 }); // import Chart from 'chart.js';
 //
@@ -74913,7 +74919,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("canvas", { attrs: { width: "400", height: "400" } })
+  return _c("div", [
+    _c("canvas", { ref: "canvas", attrs: { width: "400", height: "400" } }),
+    _vm._v(" "),
+    _c("div", { domProps: { innerHTML: _vm._s(_vm.legend) } })
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

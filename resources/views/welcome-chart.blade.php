@@ -5,12 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Chart.js Practice</title>
+  <style>
+    ul.0-legend span {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 10px;
+      color: 'red';
+      background-color: 'green';
+    }
+  </style>
 </head>
 <body>
   <h1>Chart.js Practice</h1>
   <div id="root">
     {{-- <example-component></example-component> --}}
-    <line-graph v-bind:legend="['Jan', 'Feb', 'Mar']"
+    <line-graph v-bind:labels="['Jan', 'Feb', 'Mar']"
                v-bind:chartdata="[20, 10, 30]"
                color="green"
     ></line-graph>

@@ -1,30 +1,32 @@
 <template>
-  <canvas width="400" height="400"></canvas>
+  <div>
+    <canvas width="400" height="400" ref="canvas"></canvas>
+    <div v-html="legend"></div>
+  </div>
 </template>
 
 <script>
 import Chart from 'chart.js';
 
 export default {
-    props: ['legend', 'chartdata', 'color'],
+    props: ['labels', 'chartdata', 'color'],
 
-    // data() {
-    //   legend: []
-    //   // chartdata: []
-    // },
+    data() {
+      return { legend: ''};
+    },
 
     mounted() {
-        console.log('BarGraph component mounted.');
+        console.log('LineGraph component mounted.');
 
         // var ctx = document.getElementById('myChart');
         // var ctx = this.$el;
 
-        var myChart = new Chart(this.$el, {
+        var myChart = new Chart(this.$refs, {
         type: 'line',
         // type: 'bar',
         data: {
             // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            labels: this.legend,
+            labels: this.labels,
             datasets: [{
                 label: '# of Votes',
                 data: this.chartdata,
@@ -58,6 +60,9 @@ export default {
             }
         }
         });
+        this.legend = myChart.generateLegend();
+        console.log(this.legend);
+        // console.log(myChart.generateLegend());
 
     }
 }
