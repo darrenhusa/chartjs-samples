@@ -17,15 +17,20 @@
   </style>
 </head>
 <body>
-  <h1>Chart.js Practice</h1>
+  <h1>Chart.js with axios Practice</h1>
   <div id="root">
     {{-- <example-component></example-component> --}}
-    <line-graph v-bind:labels="{{ $labels }}"
+    <graph url="/api/revenue" color="green"></graph>
+
+    {{-- <graph url="http://chart-practice.test/api/revenue"
+          color="green"></graph> --}}
+
+    {{-- <line-graph v-bind:labels="{{ $labels }}"
                v-bind:chartdata="{{ $chartdata }}"
                color="green"
     ></line-graph>
-    {{-- <bar-graph v-bind:legend="['01', '02', '03']"
-               v-bind:chartdata="[100, 50, 25]"
+    {{-- <bar-graph v-bind:legend="['01', '02', '03']" --}}
+               {{-- v-bind:chartdata="[100, 50, 25]"
     ></bar-graph> --}}
 
     {{-- <bar-graph></bar-graph> --}}
