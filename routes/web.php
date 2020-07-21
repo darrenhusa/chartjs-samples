@@ -20,14 +20,16 @@ Route::get('/api/revenue', function () {
     'labels' => $labels,
     'chartdata' => $chartdata,
   ]);
+});
 
-  // dd($result);
+Route::get('/users', function () {
+  $users = \App\User::all();
 
-  return $result;
+  // dd($users);
 
-  // dd($labels, $chartdata);
+  // return $users;
 
-    // return view('welcome-chart', compact('labels', 'chartdata'));
+  return view('users.index', compact('users'));
 });
 
 // Route::get('/revenue', function () {
