@@ -29,7 +29,7 @@ Route::get('/users', function () {
 
   // return $users;
 
-  return view('users.index', compact('users'));
+  return view('users.index2', compact('users'));
 });
 
 // Route::get('/revenue', function () {
