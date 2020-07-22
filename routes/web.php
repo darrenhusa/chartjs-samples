@@ -29,6 +29,10 @@ Route::get('/users', function () {
 
   // return $users;
 
+  // uses tailwindcss responsive datatable
+  // return view('users.index-dt', compact('users'));
+
+  // uses datatable vue component
   return view('users.index2', compact('users'));
 });
 

@@ -1,4 +1,13 @@
 <template>
+  <!-- <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> -->
+<!--Replace with your tailwind.css once created-->
+
+<!--Regular Datatables CSS-->
+<!-- <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet"> -->
+<!--Responsive Extension Datatables CSS-->
+<!-- <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet"> -->
+
+
   <div class="app-root">
 
     <!--Container-->
@@ -6,7 +15,7 @@
 
     <!--Title-->
     <h1 class="flex items-center font-sans font-bold break-normal text-indigo-500 px-2 py-8 text-xl md:text-2xl">
-      Responsive <a class="underline mx-2" href="https://datatables.net/">DataTables.net</a> Table
+      Responsive DataTables.net Table
     </h1>
 
     <!--Card-->
@@ -64,6 +73,19 @@
 <!-- <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script> -->
 <script>
 
+// import Vue from 'vue'
+// import VueTailwind from 'vue-tailwind'
+
+// Vue.use(VueTailwind)
+// import 'jquery/dist/jquery.min.css';
+
+// for css
+import 'tailwindcss/dist/tailwind.min.css';
+
+import 'datatables.net-dt/css/jquery.dataTables.min.css';
+import 'datatables.net-responsive-dt/css/responsive.dataTables.min.css';
+
+//for javascript scripts
 var $  = require( 'jquery' );
 var dt = require( 'datatables.net' )();
 require( 'datatables.net-responsive-dt' )( window, $ );
