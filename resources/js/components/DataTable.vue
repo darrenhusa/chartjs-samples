@@ -86,7 +86,7 @@ import 'datatables.net-dt/css/jquery.dataTables.min.css';
 var $  = require( 'jquery' );
 //adding this line breaks everything!!!!
 //////////////////////////////////////////
-// var dt = require( 'datatables.net' )();
+// var dt = require( 'datatables.net' )(window. $);
 //////////////////////////////////////////
 
 // require( 'datatables.net-responsive-dt' )( window, $ );
@@ -98,13 +98,15 @@ var $  = require( 'jquery' );
 
     data() {
 
-      dataTable: null;
+        return {dataTable: null};
     },
 
       mounted() {
           console.log('Datatable component mounted.');
 
-          this.dataTable = this.$refs.DataTable({});
+          this.dataTable = this.$refs;
+          // this.dataTable = this.$refs.DataTable({});
+          // this.dataTable = this.$refs.DataTable({});
           // this.dataTable = $('#example').DataTable({});
             //
             // var table = this.$refs.DataTable( {
