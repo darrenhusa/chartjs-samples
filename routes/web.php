@@ -20,6 +20,8 @@ Route::get('/api/revenue', function () {
     'labels' => $labels,
     'chartdata' => $chartdata,
   ]);
+
+  return $result;
 });
 
 Route::get('/users', function () {
