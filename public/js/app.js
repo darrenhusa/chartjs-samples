@@ -1984,6 +1984,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Datatable component mounted.');
@@ -22669,7 +22674,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*Overrides for Tailwind CSS */\n\n/*Form fields*/\n.dataTables_wrapper select,\n.dataTables_wrapper .dataTables_filter input {\n  color: #4a5568; \t\t\t/*text-gray-700*/\n  padding-left: 1rem; \t\t/*pl-4*/\n  padding-right: 1rem; \t\t/*pl-4*/\n  padding-top: .5rem; \t\t/*pl-2*/\n  padding-bottom: .5rem; \t\t/*pl-2*/\n  line-height: 1.25; \t\t\t/*leading-tight*/\n  border-width: 2px; \t\t\t/*border-2*/\n  border-radius: .25rem;\n  border-color: #edf2f7; \t\t/*border-gray-200*/\n  background-color: #edf2f7; \t/*bg-gray-200*/\n}\n\n/*Row Hover*/\ntable.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {\n  background-color: #ebf4ff;\t/*bg-indigo-100*/\n}\n\n/*Pagination Buttons*/\n.dataTables_wrapper .dataTables_paginate .paginate_button\t\t{\n  font-weight: 700;\t\t\t\t/*font-bold*/\n  border-radius: .25rem;\t\t\t/*rounded*/\n  border: 1px solid transparent;\t/*border border-transparent*/\n}\n\n/*Pagination Buttons - Current selected */\n.dataTables_wrapper .dataTables_paginate .paginate_button.current\t{\n  color: #fff !important;\t\t\t\t/*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06); \t/*shadow*/\n  font-weight: 700;\t\t\t\t\t/*font-bold*/\n  border-radius: .25rem;\t\t\t\t/*rounded*/\n  background: #667eea !important;\t\t/*bg-indigo-500*/\n  border: 1px solid transparent;\t\t/*border border-transparent*/\n}\n\n/*Pagination Buttons - Hover */\n.dataTables_wrapper .dataTables_paginate .paginate_button:hover\t\t{\n  color: #fff !important;\t\t\t\t/*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);\t /*shadow*/\n  font-weight: 700;\t\t\t\t\t/*font-bold*/\n  border-radius: .25rem;\t\t\t\t/*rounded*/\n  background: #667eea !important;\t\t/*bg-indigo-500*/\n  border: 1px solid transparent;\t\t/*border border-transparent*/\n}\n\n/*Add padding to bottom border */\ntable.dataTable.no-footer {\n  border-bottom: 1px solid #e2e8f0;\t/*border-b-1 border-gray-300*/\n  margin-top: 0.75em;\n  margin-bottom: 0.75em;\n}\n\n/*Change colour of responsive icon*/\ntable.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {\n  background-color: #667eea !important; /*bg-indigo-500*/\n}\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*Overrides for Tailwind CSS */\n\n/*Form fields*/\n.dataTables_wrapper select,\n.dataTables_wrapper .dataTables_filter input {\n  color: #4a5568; \t\t\t/*text-gray-700*/\n  padding-left: 1rem; \t\t/*pl-4*/\n  padding-right: 1rem; \t\t/*pl-4*/\n  padding-top: .5rem; \t\t/*pl-2*/\n  padding-bottom: .5rem; \t\t/*pl-2*/\n  line-height: 1.25; \t\t\t/*leading-tight*/\n  border-width: 2px; \t\t\t/*border-2*/\n  border-radius: .25rem;\n  border-color: #edf2f7; \t\t/*border-gray-200*/\n  background-color: #edf2f7; \t/*bg-gray-200*/\n}\n\n/*Row Hover*/\ntable.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {\n  background-color: #ebf4ff;\t/*bg-indigo-100*/\n}\n\n/*Pagination Buttons*/\n.dataTables_wrapper .dataTables_paginate .paginate_button\t\t{\n  font-weight: 700;\t\t\t\t/*font-bold*/\n  border-radius: .25rem;\t\t\t/*rounded*/\n  border: 1px solid transparent;\t/*border border-transparent*/\n}\n\n/*Pagination Buttons - Current selected */\n.dataTables_wrapper .dataTables_paginate .paginate_button.current\t{\n  color: #fff !important;\t\t\t\t/*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06); \t/*shadow*/\n  font-weight: 700;\t\t\t\t\t/*font-bold*/\n  border-radius: .25rem;\t\t\t\t/*rounded*/\n  background: #667eea !important;\t\t/*bg-indigo-500*/\n  border: 1px solid transparent;\t\t/*border border-transparent*/\n}\n\n/*Pagination Buttons - Hover */\n.dataTables_wrapper .dataTables_paginate .paginate_button:hover\t\t{\n  color: #fff !important;\t\t\t\t/*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);\t /*shadow*/\n  font-weight: 700;\t\t\t\t\t/*font-bold*/\n  border-radius: .25rem;\t\t\t\t/*rounded*/\n  background: #667eea !important;\t\t/*bg-indigo-500*/\n  border: 1px solid transparent;\t\t/*border border-transparent*/\n}\n\n/*Add padding to bottom border */\ntable.dataTable.no-footer {\n  border-bottom: 1px solid #e2e8f0;\t/*border-b-1 border-gray-300*/\n  margin-top: 0.75em;\n  margin-bottom: 0.75em;\n}\n\n/*Change colour of responsive icon*/\ntable.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {\n  background-color: #667eea !important; /*bg-indigo-500*/\n}\n\n", ""]);
 
 // exports
 
@@ -75652,8 +75657,128 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
-var staticRenderFns = []
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "app-root" }, [
+      _c(
+        "div",
+        { staticClass: "container w-full md:w-4/5 xl:w-3/5  mx-auto px-2" },
+        [
+          _c(
+            "h1",
+            {
+              staticClass:
+                "flex items-center font-sans font-bold break-normal text-indigo-500 px-2 py-8 text-xl md:text-2xl"
+            },
+            [
+              _vm._v("\n    Responsive "),
+              _c(
+                "a",
+                {
+                  staticClass: "underline mx-2",
+                  attrs: { href: "https://datatables.net/" }
+                },
+                [_vm._v("DataTables.net")]
+              ),
+              _vm._v(" Table\n  ")
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "p-8 mt-6 lg:mt-0 rounded shadow bg-white",
+              attrs: { id: "recipients" }
+            },
+            [
+              _c(
+                "table",
+                {
+                  staticClass: "stripe hover",
+                  staticStyle: {
+                    width: "100%",
+                    "padding-top": "1em",
+                    "padding-bottom": "1em"
+                  },
+                  attrs: { id: "example" }
+                },
+                [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", { attrs: { "data-priority": "1" } }, [
+                        _vm._v("Name")
+                      ]),
+                      _vm._v(" "),
+                      _c("th", { attrs: { "data-priority": "2" } }, [
+                        _vm._v("Position")
+                      ]),
+                      _vm._v(" "),
+                      _c("th", { attrs: { "data-priority": "3" } }, [
+                        _vm._v("Office")
+                      ]),
+                      _vm._v(" "),
+                      _c("th", { attrs: { "data-priority": "4" } }, [
+                        _vm._v("Age")
+                      ]),
+                      _vm._v(" "),
+                      _c("th", { attrs: { "data-priority": "5" } }, [
+                        _vm._v("Start date")
+                      ]),
+                      _vm._v(" "),
+                      _c("th", { attrs: { "data-priority": "6" } }, [
+                        _vm._v("Salary")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [_vm._v("Tiger Nixon")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("System Architect")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Edinburgh")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("61")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("2011/04/25")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("$320,800")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Donna Snider")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Customer Support")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("New York")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("27")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("2011/01/25")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("$112,000")])
+                    ])
+                  ])
+                ]
+              )
+            ]
+          )
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
 
 
 
@@ -87873,8 +87998,8 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  */
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-// Vue.component('datatable', require('./components/DataTable.vue').default);
-// Vue.component('graph', require('./components/BarGraph.vue').default);
+
+Vue.component('datatable', __webpack_require__(/*! ./components/DataTable.vue */ "./resources/js/components/DataTable.vue")["default"]); // Vue.component('graph', require('./components/BarGraph.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -87885,16 +88010,15 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // var BarGraph = require('./components/BarGraph.vue').default;
 // var LineGraph = require('./components/LineGraph.vue').default;
 
-var Graph = __webpack_require__(/*! ./components/Graph.vue */ "./resources/js/components/Graph.vue")["default"];
+var Graph = __webpack_require__(/*! ./components/Graph.vue */ "./resources/js/components/Graph.vue")["default"]; // var DataTable = require('./components/DataTable.vue').default;
 
-var DataTable = __webpack_require__(/*! ./components/DataTable.vue */ "./resources/js/components/DataTable.vue")["default"];
 
 var app = new Vue({
   el: '#root',
   // components: { example-component }
   components: {
     // ExampleComponent,
-    DataTable: DataTable,
+    // DataTable,
     Graph: Graph // LineGraph,
     // BarGraph,
 

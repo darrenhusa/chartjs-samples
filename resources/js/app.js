@@ -19,7 +19,7 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-// Vue.component('datatable', require('./components/DataTable.vue').default);
+Vue.component('datatable', require('./components/DataTable.vue').default);
 // Vue.component('graph', require('./components/BarGraph.vue').default);
 
 /**
@@ -32,7 +32,7 @@ window.Vue = require('vue');
 // var BarGraph = require('./components/BarGraph.vue').default;
 // var LineGraph = require('./components/LineGraph.vue').default;
 var Graph = require('./components/Graph.vue').default;
-var DataTable = require('./components/DataTable.vue').default;
+// var DataTable = require('./components/DataTable.vue').default;
 
 const app = new Vue({
     el: '#root',
@@ -40,7 +40,7 @@ const app = new Vue({
     // components: { example-component }
     components: {
       // ExampleComponent,
-      DataTable,
+      // DataTable,
       Graph,
       // LineGraph,
       // BarGraph,
