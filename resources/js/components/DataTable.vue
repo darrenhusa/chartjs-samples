@@ -22,7 +22,7 @@
      <div id='recipients' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
 
 
-      <table id="example" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
+      <table refs="example" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
         <thead>
           <tr>
             <th data-priority="1">Name</th>
@@ -95,8 +95,17 @@ var $  = require( 'jquery' );
 // require( 'datatables.net' )();
 
   export default {
+
+    data() {
+
+      dataTable: null;
+    },
+
       mounted() {
           console.log('Datatable component mounted.');
+
+          this.dataTable = this.$refs.DataTable({});
+          // this.dataTable = $('#example').DataTable({});
             //
             // var table = this.$refs.DataTable( {
             //     responsive: true
