@@ -73,21 +73,26 @@
 </template>
 
 <script>
-import 'tailwindcss/dist/base.min.css';
-import 'tailwindcss/dist/components.min.css';
-import 'tailwindcss/dist/utilities.min.css';
+// import 'tailwindcss/dist/base.min.css';
+// import 'tailwindcss/dist/components.min.css';
+// import 'tailwindcss/dist/utilities.min.css';
 
-// import 'tailwindcss/dist/tailwind.min.css';
+import 'tailwindcss/dist/tailwind.min.css';
 
-// import 'datatables.net-dt/css/jquery.dataTables.min.css';
+import 'datatables.net-dt/css/jquery.dataTables.min.css';
 // import 'datatables.net-responsive-dt/css/responsive.dataTables.min.css';
 
 //for javascript scripts
-// var $  = require( 'jquery' );
+var $  = require( 'jquery' );
+//adding this line breaks everything!!!!
+//////////////////////////////////////////
 // var dt = require( 'datatables.net' )();
-require( 'jquery' );
-// require( 'datatables.net' )();
+//////////////////////////////////////////
+
 // require( 'datatables.net-responsive-dt' )( window, $ );
+
+// require( 'jquery' );
+// require( 'datatables.net' )();
 
   export default {
       mounted() {
