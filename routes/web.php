@@ -38,6 +38,12 @@ Route::get('/users', function () {
   return view('users.index2', compact('users'));
 });
 
+Route::get('/sample-charts', function () {
+
+  return view('ten_sample_charts');
+});
+
+
 // Route::get('/revenue', function () {
 //     return view('welcome-chart');
 // });
