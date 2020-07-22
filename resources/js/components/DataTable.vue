@@ -15,14 +15,14 @@
 
     <!--Title-->
     <h1 class="flex items-center font-sans font-bold break-normal text-indigo-500 px-2 py-8 text-xl md:text-2xl">
-      Responsive DataTables.net Table
+      <slot></slot>
     </h1>
 
     <!--Card-->
      <div id='recipients' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
 
 
-      <table ref="example" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
+      <table id="example" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
         <thead>
           <tr>
             <th data-priority="1">Name</th>
@@ -73,27 +73,31 @@
 </template>
 
 <script>
-import 'tailwindcss/dist/tailwind.min.css';
+import 'tailwindcss/dist/base.min.css';
+import 'tailwindcss/dist/components.min.css';
+import 'tailwindcss/dist/utilities.min.css';
 
-import 'datatables.net-dt/css/jquery.dataTables.min.css';
-import 'datatables.net-responsive-dt/css/responsive.dataTables.min.css';
+// import 'tailwindcss/dist/tailwind.min.css';
+
+// import 'datatables.net-dt/css/jquery.dataTables.min.css';
+// import 'datatables.net-responsive-dt/css/responsive.dataTables.min.css';
 
 //for javascript scripts
 // var $  = require( 'jquery' );
 // var dt = require( 'datatables.net' )();
 require( 'jquery' );
-require( 'datatables.net' )();
-require( 'datatables.net-responsive-dt' )( window, $ );
+// require( 'datatables.net' )();
+// require( 'datatables.net-responsive-dt' )( window, $ );
 
   export default {
       mounted() {
           console.log('Datatable component mounted.');
-
-            var table = this.$refs.example.DataTable( {
-                responsive: true
-              } )
-              .columns.adjust()
-              .responsive.recalc();
+            //
+            // var table = this.$refs.DataTable( {
+            //     responsive: true
+            //   } )
+            //   .columns.adjust()
+            //   .responsive.recalc();
 
           // $(document).ready(function() {
           //

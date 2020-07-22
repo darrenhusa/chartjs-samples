@@ -19,7 +19,9 @@
    <body class="bg-gray-100 text-gray-900 tracking-wider leading-normal">
 
      <div id="root">
-       <datatable></datatable>
+       <datatable>
+         Responsive DataTables.net Table
+       </datatable>
      </div>
 
      <script src="/js/app.js"></script>
