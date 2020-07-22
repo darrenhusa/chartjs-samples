@@ -63,23 +63,16 @@
     </div>
     <!--/container-->
   </div>
+  <!-- jQuery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+
+  <!--Datatables -->
+  <!-- <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
+  <!-- <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script> -->
+
 </template>
 
-<!-- jQuery -->
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-
-<!--Datatables -->
-<!-- <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
-<!-- <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script> -->
 <script>
-
-// import Vue from 'vue'
-// import VueTailwind from 'vue-tailwind'
-
-// Vue.use(VueTailwind)
-// import 'jquery/dist/jquery.min.css';
-
-// for css
 import 'tailwindcss/dist/tailwind.min.css';
 
 import 'datatables.net-dt/css/jquery.dataTables.min.css';
@@ -90,23 +83,20 @@ var $  = require( 'jquery' );
 var dt = require( 'datatables.net' )();
 require( 'datatables.net-responsive-dt' )( window, $ );
 
-  $(document).ready(function() {
+  export default {
+      mounted() {
+          console.log('Datatable component mounted.');
 
-    var table = $('#example').DataTable( {
-        responsive: true
-      } )
-      .columns.adjust()
-      .responsive.recalc();
-  } );
-
-</script>
-
-<script>
-    export default {
-        mounted() {
-            console.log('Datatable component mounted.')
-        }
-    }
+          // $(document).ready(function() {
+          //
+          //   var table = $('#example').DataTable( {
+          //       responsive: true
+          //     } )
+          //     .columns.adjust()
+          //     .responsive.recalc();
+          // } );
+      }
+  }
 </script>
 
 <style>
