@@ -23,4 +23,10 @@ class Student extends Model
 
       //TODO Convert to ternary form???
     }
+
+    public function getFullNameAttribute()
+    {
+      return $this->last_name . ', ' . $this->first_name;
+    }
+
 }
