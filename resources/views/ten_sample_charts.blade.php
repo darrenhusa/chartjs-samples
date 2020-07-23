@@ -31,6 +31,9 @@
   <h1>Chart 8 - Bubble Chart</h1>
   <canvas id="bubble-chart" width="800" height="800"></canvas>
 
+  <h1>Chart 9 - Stacked Bar Chart</h1>
+  <canvas id="stacked-bar-chart"></canvas>
+
   <script src="/js/app.js"></script>
   <script>
   // Bar chart
@@ -282,7 +285,37 @@ new Chart(document.getElementById("bubble-chart"), {
     }
 });
 
+var ctx = document.getElementById('stacked-bar-chart');
 
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Risk Level'],
+    datasets: [
+      {
+        label: 'Low',
+        data: [67.8],
+        backgroundColor: '#D6E9C6',
+      },
+      {
+        label: 'Moderate',
+        data: [20.7],
+        backgroundColor: '#FAEBCC',
+      },
+      {
+        label: 'High',
+        data: [11.4],
+        backgroundColor: '#EBCCD1',
+      }
+    ]
+  },
+  options: {
+    scales: {
+      xAxes: [{ stacked: true }],
+      yAxes: [{ stacked: true }]
+    }
+  }
+});
   </script>
 </body>
 </html>
