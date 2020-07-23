@@ -22,9 +22,7 @@ class CreateStudentsTable extends Migration
             // assuming TRAD college so means undergraduate
             // another possible column type is a float
             $table->integer('credit_hours_enrolled')->unsigned();
-
-            // removed temporarily!
-            // $table->string('ft_pt_status');
+            $table->string('major');
             $table->boolean('is_an_athlete');
             // $table->timestamps();
         });

@@ -28,6 +28,8 @@
         <th>Entry Type</th>
         <th>Cr Hrs Enrolled</th>
         <th>FtPtStatus</th>
+        <th>Major</th>
+        <th>IsAthlete</th>
       </tr>
     </thead>
     <tbody>
@@ -39,6 +41,8 @@
           <td>{{ $student->entry_type }}</td>
           <td>{{ $student->credit_hours_enrolled }}</td>
           <td>{{ $student->ft_pt_status }}</td>
+          <td>{{ $student->major }}</td>
+          <td>{{ $student->is_an_athlete }}</td>
         </tr>
         @endforeach
     </tbody>
