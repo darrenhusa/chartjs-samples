@@ -18,9 +18,9 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Email</th>
+                    <th><a href="#">Id</a></th>
+                    <th><a href="#">Name</a></th>
+                    <th><a href="#">Email</a></th>
                 </tr>
             </thead>
             <tbody>
