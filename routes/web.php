@@ -36,7 +36,10 @@ Route::get('/users', function () {
   // return view('users.index-dt', compact('users'));
 
   // uses datatable vue component
-  return view('users.index2', compact('users'));
+  // return view('users.index2', compact('users'));
+
+  //uses laravel livewire
+  return view('users.index', compact('users'));
 });
 
 Route::get('/sample-charts', function () {
