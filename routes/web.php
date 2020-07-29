@@ -47,6 +47,12 @@ Route::get('/sample-charts', function () {
   return view('ten_sample_charts');
 });
 
+Route::get('/fr-profile', function () {
+
+  return view('freshman-profile');
+});
+
+
 
 // Route::get('/revenue', function () {
 //     return view('welcome-chart');
